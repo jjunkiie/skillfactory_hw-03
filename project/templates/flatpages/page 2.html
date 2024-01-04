@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ flatpage.title }}</title>
+</head>
+<body>
+
+     {% include 'flatpages/default.html' %}
+
+<!-- Page content-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    {% block content %}
+                    <h5><i>{{ flatpage.content }}</i></h5>
+                    {% endblock content %}
+                </div>
+           </div>
+        </div>
+</body>
+</html>
